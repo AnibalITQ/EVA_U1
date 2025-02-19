@@ -55,7 +55,7 @@ export default function SoftwareEngineeringConcepts() {
 
       <footer className="bg-gray-800 text-white py-8 mt-12">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2025 Anibal Emilio Tirado Delado | Ingeniería de software.</p>
+          <p>&copy; 2025 Anibal Emilio Tirado Delgado | Ingeniería de software.</p>
           <p className="mt-2">Diseñado con pasión por la ingeniería de software.</p>
         </div>
       </footer>
