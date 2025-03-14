@@ -1,8 +1,23 @@
-import { Cpu, Layout, FileText, MapIcon as Diagram, CheckSquare } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+"use client"; // Marca este componente como un Client Component
+
+import { useRouter } from "next/navigation"; // Usa next/navigation en lugar de next/router
+import { Cpu, Layout, FileText, MapIcon as Diagram, CheckSquare } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function SoftwareEngineeringConcepts() {
+  const router = useRouter(); // Obtén el objeto router de next/navigation
+
+  // Función para navegar a la página Scrum
+  const navigateToScrum = () => {
+    router.push("/scrum"); // Navega a /scrum
+  };
+
+  // Función para navegar a la página Espiral
+  const navigateToEspiral = () => {
+    router.push("/espiral"); // Navega a /espiral
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <header className="py-12 text-center">
@@ -12,6 +27,21 @@ export default function SoftwareEngineeringConcepts() {
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Explorando las bases fundamentales y metodologías esenciales en el desarrollo de software moderno.
         </p>
+        {/* Botones de navegación */}
+        <div className="mt-6 space-x-4">
+          <button
+            onClick={navigateToScrum}
+            className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            Ir a Scrum
+          </button>
+          <button
+            onClick={navigateToEspiral}
+            className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+          >
+            Ir a Espiral
+          </button>
+        </div>
       </header>
 
       <main className="container mx-auto px-4 py-8">
@@ -60,9 +90,8 @@ export default function SoftwareEngineeringConcepts() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
 
 interface ConceptCardProps {
   icon: React.ReactNode;
@@ -94,5 +123,3 @@ function ConceptCard({ icon, title, description, content }: ConceptCardProps) {
     </Card>
   );
 }
-
-
