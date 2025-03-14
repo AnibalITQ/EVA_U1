@@ -107,7 +107,7 @@ export default function ScrumGuidePage() {
               </CardHeader>
               <CardContent>
                 <p>
-                  Profesionales que realizan el trabajo de entregar un incremento de producto "Terminado" que
+                  Profesionales que realizan el trabajo de entregar un incremento de producto &quot;Terminado&quot; que
                   potencialmente se pueda poner en producción al final de cada Sprint.
                 </p>
                 <ul className="mt-4 space-y-2 list-disc list-inside text-sm">
@@ -186,7 +186,7 @@ export default function ScrumGuidePage() {
                 </p>
                 <ul className="mt-4 space-y-2 list-disc list-inside text-sm">
                   <li>Debe estar en condición utilizable</li>
-                  <li>Debe cumplir la Definición de "Terminado"</li>
+                  <li>Debe cumplir la Definición de &quot;Terminado&quot;</li>
                   <li>Debe ser inspeccionable al final del Sprint</li>
                   <li>Representa un paso hacia una visión o meta</li>
                 </ul>
@@ -210,7 +210,7 @@ export default function ScrumGuidePage() {
               <CardContent>
                 <p>
                   Bloque de tiempo (time-box) de un mes o menos durante el cual se crea un incremento de producto
-                  "Terminado" utilizable y potencialmente desplegable.
+                  &quot;Terminado&quot; utilizable y potencialmente desplegable.
                 </p>
                 <ul className="mt-4 space-y-2 list-disc list-inside text-sm">
                   <li>Duración consistente durante el desarrollo</li>
