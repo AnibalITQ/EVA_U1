@@ -12,7 +12,12 @@ export default function SoftwareEngineeringConcepts() {
   const navigateToScrum = () => {
     router.push("/scrum"); // Navega a /scrum
   };
-
+  const navigateToLanguajes = () => {
+    router.push("/lenguajes"); // Navega a /lenguajes
+  };
+  const navigateToDB = () => {
+    router.push("/db"); // Navega a /db
+  };
   // Función para navegar a la página Espiral
   const navigateToEspiral = () => {
     router.push("/espiral"); // Navega a /espiral
@@ -35,6 +40,18 @@ export default function SoftwareEngineeringConcepts() {
           >
             Ir a Scrum
           </button>
+          <button
+          onClick={navigateToLanguajes}
+          className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
+          >
+          Ir a Lenguajes Programacion
+          </button>
+            <button
+            onClick={navigateToDB}
+            className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+            >
+            Ir a Base de Datos
+            </button>
           <button
             onClick={navigateToEspiral}
             className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
