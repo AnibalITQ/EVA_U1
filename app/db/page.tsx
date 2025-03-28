@@ -404,7 +404,7 @@ ROLLBACK;`}</code>
                       La normalización es un proceso sistemático que se aplica a las bases de datos relacionales para
                       eliminar la redundancia de datos, reducir anomalías de actualización y mejorar la integridad de
                       los datos. Este proceso descompone las relaciones complejas en relaciones más simples y estables
-                      mediante la aplicación de reglas denominadas "formas normales".
+                      mediante la aplicación de reglas denominadas formas normales.
                     </p>
                   </div>
 
