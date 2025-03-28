@@ -1,13 +1,56 @@
+"use client"
+
+import { useRouter } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 export default function DatabaseTheoretical() {
+  const router = useRouter() // Obtén el objeto router de next/navigation
+
+  // Funciones de navegación
+  const navigateToScrum = () => {
+    router.push("/scrum") // Navega a /scrum
+  }
+
+  const navigateToLanguajes = () => {
+    router.push("/lenguajes") // Navega a /lenguajes
+  }
+
+  const navigateToDB = () => {
+    router.push("/db") // Navega a /db
+  }
+
+  const navigateToEspiral = () => {
+    router.push("/espiral") // Navega a /espiral
+  }
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-50">
       <div className="container px-4 md:px-6">
+        {/* Navigation Buttons */}
+        <div className="flex flex-wrap gap-4 mb-8 justify-center">
+          <Button onClick={navigateToScrum} variant="outline">
+            Metodología Scrum
+          </Button>
+          <Button onClick={navigateToLanguajes} variant="outline">
+            Lenguajes de Programación
+          </Button>
+          <Button
+            onClick={navigateToDB}
+            variant="outline"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            Bases de Datos
+          </Button>
+          <Button onClick={navigateToEspiral} variant="outline">
+            Modelo Espiral
+          </Button>
+        </div>
+
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -177,16 +220,6 @@ export default function DatabaseTheoretical() {
                         <strong>Nivel interno:</strong> Estructura física, cómo se almacenan realmente los datos
                       </li>
                     </ul>
-                    <div className="mt-4 flex justify-center">
-                      <div className="relative h-64 w-full max-w-md border rounded-md overflow-hidden">
-                        <Image
-                          src="/placeholder.svg?height=256&width=400"
-                          alt="Arquitectura de tres niveles de un SGBD"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -854,6 +887,32 @@ FOREIGN KEY (director_id) REFERENCES Empleados(empleado_id);`}</code>
             </Card>
           </TabsContent>
         </Tabs>
+
+        {/* Conclusion */}
+        <Card className="mt-10">
+          <CardHeader>
+            <CardTitle>Conclusiones</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4">
+              Los sistemas de gestión de bases de datos representan una pieza fundamental en la arquitectura de los
+              sistemas de información modernos. El modelo relacional, con sus sólidos fundamentos matemáticos, sigue
+              siendo predominante en aplicaciones donde la integridad y consistencia de los datos son críticas. [^1]
+            </p>
+            <p className="text-muted-foreground mb-4">
+              La normalización, como proceso sistemático para optimizar el diseño de bases de datos relacionales,
+              proporciona un marco teórico que guía a los diseñadores hacia estructuras de datos eficientes y libres de
+              anomalías. Sin embargo, es importante recordar que el diseño de bases de datos es tanto una ciencia como
+              un arte, donde las decisiones deben equilibrar los principios teóricos con los requisitos prácticos de
+              rendimiento y usabilidad.
+            </p>
+            <p className="text-muted-foreground">
+              En la era del big data y las aplicaciones distribuidas, los conceptos fundamentales del modelo relacional
+              y la normalización siguen siendo relevantes, incluso cuando se complementan con enfoques NoSQL para casos
+              de uso específicos que requieren escalabilidad horizontal y esquemas flexibles.
+            </p>
+          </CardContent>
+        </Card>
       </div>
     </section>
   )

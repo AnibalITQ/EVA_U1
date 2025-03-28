@@ -1,8 +1,53 @@
+"use client"
+
+import { useRouter } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
+import { Button } from "@/components/ui/button"
 export default function ProgrammingLanguagesSection() {
+  const router = useRouter() // Obtén el objeto router de next/navigation
+
+  // Funciones de navegación
+  const navigateToScrum = () => {
+    router.push("/scrum") // Navega a /scrum
+  }
+
+  const navigateToLanguajes = () => {
+    router.push("/lenguajes") // Navega a /lenguajes
+  }
+
+  const navigateToDB = () => {
+    router.push("/db") // Navega a /db
+  }
+
+  const navigateToEspiral = () => {
+    router.push("/espiral") // Navega a /espiral
+  }
+
   return (
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-50">
+      <div className="container px-4 md:px-6">
+        {/* Navigation Buttons */}
+        <div className="flex flex-wrap gap-4 mb-8 justify-center">
+          <Button onClick={navigateToScrum} variant="outline">
+            Metodología Scrum
+          </Button>
+          <Button onClick={navigateToLanguajes} variant="outline"
+           className="bg-primary text-primary-foreground hover:bg-primary/90">
+            Lenguajes de Programación
+          </Button>
+          <Button
+            onClick={navigateToDB}
+            variant="outline"
+           
+          >
+            Bases de Datos
+          </Button>
+          <Button onClick={navigateToEspiral} variant="outline">
+            Modelo Espiral
+          </Button>
+        </div>
+      
     <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -159,6 +204,8 @@ export default function ProgrammingLanguagesSection() {
         </div>
       </div>
     </section>
+    </div>
+  </section>
   )
 }
 
