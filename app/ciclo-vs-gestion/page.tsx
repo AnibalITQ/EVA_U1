@@ -39,7 +39,7 @@ export default function CicloVsGestionPage() {
             Ciclo de Vida vs Gestión de Proyectos
           </h1>
           <p className="mx-auto max-w-[800px] text-muted-foreground md:text-xl">
-            [Placeholder: breve introducción a la comparación entre ciclo de vida y gestión de proyectos]
+            El ciclo de vida y la gestión de proyectos son conceptos fundamentales en la administración de proyectos, pero tienen diferencias clave en su enfoque y objetivos. Aquí comparamos ambos.
           </p>
         </div>
 
@@ -47,11 +47,11 @@ export default function CicloVsGestionPage() {
         <Card className="mb-10">
           <CardHeader>
             <CardTitle>Introducción</CardTitle>
-            <CardDescription>[Placeholder: explicación general del tema]</CardDescription>
+            <CardDescription>En esta sección, exploraremos las diferencias y similitudes entre el ciclo de vida de un proyecto y su gestión. Ambos conceptos son esenciales para la correcta ejecución de un proyecto, pero su aplicación y objetivos varían.</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              [Placeholder: texto introductorio aquí...]
+              El ciclo de vida de un proyecto abarca las etapas que atraviesa el proyecto desde su inicio hasta su cierre, mientras que la gestión de proyectos se refiere al proceso continuo de planificación, ejecución y control de las actividades necesarias para alcanzar los objetivos del proyecto.
             </p>
           </CardContent>
         </Card>
@@ -67,24 +67,24 @@ export default function CicloVsGestionPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Ciclo de Vida</CardTitle>
-                <CardDescription>[Placeholder: definición y fases]</CardDescription>
+                <CardDescription>El ciclo de vida de un proyecto describe las fases que atraviesa desde su concepción hasta su cierre. Este ciclo tiene un enfoque secuencial y bien definido.</CardDescription>
               </CardHeader>
               <CardContent>
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="definicion">
                     <AccordionTrigger>Definición</AccordionTrigger>
                     <AccordionContent>
-                      <p>[Placeholder: aquí va la definición de ciclo de vida]</p>
+                      <p>El ciclo de vida de un proyecto es el conjunto de fases a través de las cuales pasa un proyecto desde su inicio hasta su cierre. Abarca desde la planificación, la ejecución, hasta el cierre y la entrega final del producto.</p>
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="fases">
                     <AccordionTrigger>Fases</AccordionTrigger>
                     <AccordionContent>
                       <ul className="list-disc pl-6 space-y-2">
-                        <li>[Placeholder: fase 1]</li>
-                        <li>[Placeholder: fase 2]</li>
-                        <li>[Placeholder: fase 3]</li>
-                        <li>[Placeholder: fase 4]</li>
+                        <li>Inicio</li>
+                        <li>Planificación</li>
+                        <li>Ejecutación</li>
+                        <li>Cierre</li>
                       </ul>
                     </AccordionContent>
                   </AccordionItem>
@@ -97,29 +97,29 @@ export default function CicloVsGestionPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Gestión de Proyectos</CardTitle>
-                <CardDescription>[Placeholder: definición y áreas de conocimiento]</CardDescription>
+                <CardDescription>La gestión de proyectos se enfoca en la planificación, ejecución y control de todos los aspectos del proyecto, con el objetivo de cumplir con los plazos, presupuesto y alcance establecidos.</CardDescription>
               </CardHeader>
               <CardContent>
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="definicion">
                     <AccordionTrigger>Definición</AccordionTrigger>
                     <AccordionContent>
-                      <p>[Placeholder: aquí va la definición de gestión de proyectos]</p>
+                      <p>La gestión de proyectos implica la aplicación de conocimientos, habilidades, herramientas y técnicas para cumplir con los requisitos del proyecto y gestionar su ejecución de manera eficiente.</p>
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="areas">
                     <AccordionTrigger>Áreas de Conocimiento</AccordionTrigger>
                     <AccordionContent>
                       <ul className="list-disc pl-6 space-y-2">
-                        <li>[Placeholder: alcance]</li>
-                        <li>[Placeholder: tiempo]</li>
-                        <li>[Placeholder: costo]</li>
-                        <li>[Placeholder: calidad]</li>
-                        <li>[Placeholder: recursos humanos]</li>
-                        <li>[Placeholder: riesgos]</li>
-                        <li>[Placeholder: comunicaciones]</li>
-                        <li>[Placeholder: adquisiciones]</li>
-                        <li>[Placeholder: interesados]</li>
+                        <li>Alcance</li>
+                        <li>Tiempo</li>
+                        <li>Costo</li>
+                        <li>Calidad</li>
+                        <li>Recursos Humanos</li>
+                        <li>Riesgos</li>
+                        <li>Comunicaciones</li>
+                        <li>Adquisiciones</li>
+                        <li>Interesados</li>
                       </ul>
                     </AccordionContent>
                   </AccordionItem>
@@ -136,7 +136,7 @@ export default function CicloVsGestionPage() {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              [Placeholder: resumen comparativo entre ciclo de vida y gestión de proyectos]
+              Tanto el ciclo de vida como la gestión de proyectos son esenciales para el éxito de cualquier proyecto. Sin embargo, mientras que el ciclo de vida define las fases a seguir, la gestión de proyectos se enfoca en administrar de manera efectiva todos los recursos, plazos y riesgos a lo largo de estas fases.
             </p>
           </CardContent>
         </Card>
