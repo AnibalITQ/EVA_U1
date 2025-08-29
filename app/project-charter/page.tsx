@@ -6,12 +6,6 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image";
 export default function ProgrammingLanguagesSection() {
   const router = useRouter() // Obtén el objeto router de next/navigation
-
-  // Funciones de navegación
-/*   const navigateToScrum = () => {
-    router.push("/scrum") // Navega a /scrum
-  } */
-
     const navigateToHome = () => {
     router.push("/") // Navega a /scrum
   }
@@ -36,9 +30,6 @@ export default function ProgrammingLanguagesSection() {
           <Button onClick={navigateToHome} variant="outline">
             Regresar a la Pagina Principal
           </Button>
-{/*           <Button onClick={navigateToScrum} variant="outline">
-            Metodología Scrum
-          </Button> */}
           <Button onClick={navigateToProyectCharter} variant="outline"
            className="bg-primary text-primary-foreground hover:bg-primary/90">
             Project Charter

@@ -9,7 +9,6 @@ export default function CicloVsGestionPage() {
   const router = useRouter()
 
   // Navegación
-  const navigateToScrum = () => router.push("/scrum")
   const navigateToHome = () => router.push("/")
   const navigateToProyectCharter = () => router.push("/proyect-charter")
   const navigateToCicloVsGestion = () => router.push("/ciclo-vs-gestion")
@@ -22,7 +21,6 @@ export default function CicloVsGestionPage() {
         {/* Botones de navegación */}
         <div className="flex flex-wrap gap-4 mb-8 justify-center">
           <button onClick={navigateToHome} className="px-4 py-2 border rounded">Regresar a la pagina principal</button>
-          <button onClick={navigateToScrum} className="px-4 py-2 border rounded">Metodología Scrum</button>
           <button onClick={navigateToProyectCharter} className="px-4 py-2 border rounded">Project Charter</button>
           <button
             onClick={navigateToCicloVsGestion}

@@ -8,10 +8,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function SoftwareEngineeringConcepts() {
   const router = useRouter(); // Obtén el objeto router de next/navigation
 
-  // Función para navegar a la página Scrum
-/*   const navigateToScrum = () => {
-    router.push("/scrum"); // Navega a /scrum
-  }; */
   const navigateToProyectCharter = () => {
     router.push("/project-charter"); // Navega a /proyect-charter
   };
@@ -34,13 +30,7 @@ export default function SoftwareEngineeringConcepts() {
         </p>
         {/* Botones de navegación */}
         <div className="mt-6 space-x-4">
-{/*           <button
-            onClick={navigateToScrum}
-            className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-          >
-            Ir a Scrum
-          </button>
- */}      <button
+          <button
           onClick={navigateToProyectCharter}
           className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
           >
@@ -99,7 +89,7 @@ export default function SoftwareEngineeringConcepts() {
 
       <footer className="bg-gray-800 text-white py-8 mt-12">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2025 Anibal Emilio Tirado Delgado, Javier Bacilio Sánchez Adolfo Cortes Corona | Gestión de proyectos de software.</p>
+          <p>&copy; 2025 Anibal Emilio Tirado Delgado, Javier Bacilio Sánchez Y Adolfo Cortes Corona | Gestión de proyectos de software.</p>
           <p className="mt-2">Diseñado con pasión por la ingeniería de software.</p>
         </div>
       </footer>
