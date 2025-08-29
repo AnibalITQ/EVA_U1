@@ -1,7 +1,7 @@
 "use client"; // Marca este componente como un Client Component
 
 import { useRouter } from "next/navigation"; // Usa next/navigation en lugar de next/router
-import { Cpu, FileText, MapIcon as Diagram } from "lucide-react";
+import { Cpu, FileText } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -9,11 +9,11 @@ export default function SoftwareEngineeringConcepts() {
   const router = useRouter(); // Obtén el objeto router de next/navigation
 
   // Función para navegar a la página Scrum
-  const navigateToScrum = () => {
+/*   const navigateToScrum = () => {
     router.push("/scrum"); // Navega a /scrum
-  };
+  }; */
   const navigateToProyectCharter = () => {
-    router.push("/proyect-charter"); // Navega a /proyect-charter
+    router.push("/project-charter"); // Navega a /proyect-charter
   };
   const navigateToCicloVsGestion = () => {
     router.push("/ciclo-vs-gestion"); // Navega a /ciclo-vs-gestion
@@ -34,17 +34,17 @@ export default function SoftwareEngineeringConcepts() {
         </p>
         {/* Botones de navegación */}
         <div className="mt-6 space-x-4">
-          <button
+{/*           <button
             onClick={navigateToScrum}
             className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
           >
             Ir a Scrum
           </button>
-          <button
+ */}      <button
           onClick={navigateToProyectCharter}
           className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
           >
-          Ir a Lenguajes Programacion
+          Ir a Project Charter
           </button>
             <button
             onClick={navigateToCicloVsGestion}
@@ -76,19 +76,24 @@ export default function SoftwareEngineeringConcepts() {
             content="La gestión de proyectos es la práctica de liderar un equipo de trabajo para alcanzar metas claramente definidas en un período de tiempo determinado. Permite estructurar el esfuerzo en fases (inicio, planificación, ejecución, monitoreo y cierre), optimizando recursos y garantizando que los entregables cumplan con los estándares acordados. Es fundamental para el éxito de iniciativas en áreas como ingeniería, negocios, tecnología y más."
           />
 
-          <ConceptCard
-            icon={<FileText className="h-8 w-8 text-primary" />}
-            title="¿Qué es el PMI"
-            description=""
-            content=""
-          />
-
-          <ConceptCard
-            icon={<Diagram className="h-8 w-8 text-primary" />}
-            title="Características"
-            description=""
-            content=""
-          />
+        <ConceptCard
+          icon={<FileText className="h-8 w-8 text-primary" />}
+          title="¿Qué es el PMI"
+          description="El PMI es una asociación profesional sin fines de lucro fundada en 1969 en Estados Unidos. Su objetivo es establecer estándares globales, certificaciones y buenas prácticas en la gestión de proyectos."
+          content={
+            "Caracteristicas: "+
+            "organización global, " +
+            "estándares internacionales, " +
+            "certificaciones profesionales, " +
+            "publicación del PMBOK® Guide<br, " +
+            "promueve la investigación y el conocimiento, " +
+            "comunidad y networking, " +
+            "desarrollo profesional continuo, " +
+            "reconocimiento internacional, " +
+            "aplicación en múltiples industrias, " +
+            "enfoque multidisciplinario."
+          }
+        />
         </div>
       </main>
 

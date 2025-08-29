@@ -1,16 +1,16 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
 export default function ProgrammingLanguagesSection() {
   const router = useRouter() // Obtén el objeto router de next/navigation
 
   // Funciones de navegación
-  const navigateToScrum = () => {
+/*   const navigateToScrum = () => {
     router.push("/scrum") // Navega a /scrum
-  }
+  } */
 
     const navigateToHome = () => {
     router.push("/") // Navega a /scrum
@@ -36,9 +36,9 @@ export default function ProgrammingLanguagesSection() {
           <Button onClick={navigateToHome} variant="outline">
             Regresar a la Pagina Principal
           </Button>
-          <Button onClick={navigateToScrum} variant="outline">
+{/*           <Button onClick={navigateToScrum} variant="outline">
             Metodología Scrum
-          </Button>
+          </Button> */}
           <Button onClick={navigateToProyectCharter} variant="outline"
            className="bg-primary text-primary-foreground hover:bg-primary/90">
             Project Charter
@@ -63,7 +63,8 @@ export default function ProgrammingLanguagesSection() {
               ¿Qué es el project charter?
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Placeholder
+              Es el documento que da vida a un proyecto. En él se resumen los objetivos, el alcance, los responsables y los recursos necesarios.
+              Funciona como una “carta de presentación” del proyecto, asegurando que todos los involucrados entiendan hacia dónde se quiere llegar y cuál es su papel.
             </p>
           </div>
         </div>
@@ -71,138 +72,37 @@ export default function ProgrammingLanguagesSection() {
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12">
           <Card>
             <CardHeader>
-              <CardTitle>Definición</CardTitle>
-              <CardDescription>Comprendiendo el project charter</CardDescription>
+              <CardTitle>Partes que componen un Project Charter</CardTitle>
             </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                [Placeholder]
-              </p>
+            <CardContent >
+              <ol className="list-disc pl-5 space-y-2">
+                <li><b>Propósito del proyecto:</b> Explica por qué se inicia el proyecto y qué problema o necesidad busca resolver. Responde a la pregunta: ¿para qué existe este proyecto?</li>
+                <li><b>Objetivos:</b> Declaran qué se quiere lograr de manera concreta y medible. Normalmente están alineados con los objetivos estratégicos de la organización.</li>
+                <li><b>Alcance:</b> Define los límites del proyecto: qué actividades, entregables y resultados están incluidos, y qué no. Ayuda a evitar malentendidos.</li>
+                <li><b>Stakeholders:</b> Identifica a las personas, equipos o áreas que tienen interés o impacto en el proyecto. Se incluye al patrocinador, al cliente, al equipo del proyecto, etc.</li>
+                <li><b>Roles y responsabilidades:</b> Describe quién es responsable de qué dentro del proyecto. Por ejemplo: patrocinador, director de proyecto, equipo técnico, usuarios finales.</li>
+                <li><b>Entregables principales:</b> Los productos o resultados clave que debe generar el proyecto. Pueden ser reportes, software, infraestructura, un servicio, etc.</li>
+                <li><b>Cronograma inicial:</b> Un panorama general de las fases o hitos más importantes, con fechas tentativas de inicio y fin. No es un plan detallado, pero sí un mapa de ruta.</li>
+                <li><b>Recursos y presupuesto preliminar:</b> Estimación de los recursos financieros, humanos, materiales y tecnológicos que se necesitarán para ejecutar el proyecto.</li>
+                <li><b>Riesgos iniciales:</b> Una lista preliminar de posibles riesgos que podrían afectar el proyecto, junto con ideas para mitigarlos.</li>
+                <li><b>Criterios de éxito:</b> Define cómo se sabrá si el proyecto fue exitoso. Pueden ser indicadores de calidad, plazos cumplidos, satisfacción del cliente o beneficios obtenidos.</li>
+              </ol>
             </CardContent>
           </Card>
 
-          <Tabs defaultValue="categories" className="w-full mt-8">
-            <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="categories">Categorías</TabsTrigger>
-              <TabsTrigger value="examples">Ejemplos</TabsTrigger>
-              <TabsTrigger value="usage">Usos</TabsTrigger>
-            </TabsList>
-            <TabsContent value="categories" className="mt-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Categorías de lenguajes de programación</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>
-                      <strong>Lenguajes de bajo nivel:</strong> Cercanos al lenguaje de máquina (Ensamblador, Código
-                      máquina)
-                    </li>
-                    <li>
-                      <strong>Lenguajes de alto nivel:</strong> Más cercanos al lenguaje humano (Python, JavaScript,
-                      Java)
-                    </li>
-                    <li>
-                      <strong>Lenguajes compilados:</strong> Se traducen completamente antes de ejecutarse (C, C++,
-                      Rust)
-                    </li>
-                    <li>
-                      <strong>Lenguajes interpretados:</strong> Se traducen línea por línea durante la ejecución
-                      (Python, JavaScript)
-                    </li>
-                    <li>
-                      <strong>Lenguajes de propósito general:</strong> Sirven para diversos tipos de aplicaciones
-                    </li>
-                    <li>
-                      <strong>Lenguajes de dominio específico:</strong> Diseñados para tareas particulares (SQL, R)
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="examples" className="mt-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Ejemplos populares</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-medium">Desarrollo Web</h3>
-                      <ul className="list-disc pl-5">
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>PHP</li>
-                        <li>Ruby</li>
-                      </ul>
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-medium">Desarrollo de Aplicaciones</h3>
-                      <ul className="list-disc pl-5">
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>Swift</li>
-                        <li>Kotlin</li>
-                      </ul>
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-medium">Ciencia de Datos</h3>
-                      <ul className="list-disc pl-5">
-                        <li>Python</li>
-                        <li>R</li>
-                        <li>Julia</li>
-                      </ul>
-                    </div>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-medium">Sistemas y Rendimiento</h3>
-                      <ul className="list-disc pl-5">
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Rust</li>
-                        <li>Go</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="usage" className="mt-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Aplicaciones en el desarrollo de software</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4">
-                    Los lenguajes de programación se utilizan para desarrollar todo tipo de software:
-                  </p>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>Aplicaciones web y sitios web</li>
-                    <li>Aplicaciones móviles para iOS y Android</li>
-                    <li>Software de escritorio</li>
-                    <li>Sistemas operativos</li>
-                    <li>Videojuegos</li>
-                    <li>Software empresarial</li>
-                    <li>Inteligencia artificial y aprendizaje automático</li>
-                    <li>Análisis de datos y visualización</li>
-                    <li>Internet de las cosas (IoT)</li>
-                    <li>Sistemas embebidos</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
 
           <Card className="mt-8">
             <CardHeader>
-              <CardTitle>Evolución constante</CardTitle>
+              <CardTitle>Ejemplo</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
-                Los lenguajes de programación continúan evolucionando para adaptarse a las nuevas necesidades
-                tecnológicas. Cada lenguaje tiene sus fortalezas y debilidades, y la elección del lenguaje adecuado
-                depende del tipo de proyecto, requisitos de rendimiento, ecosistema, y preferencias del equipo de
-                desarrollo.
-              </p>
+              <Image
+                src="/images/project-charter-ejemplo.png"
+                alt="Ejemplo de Project Charter"
+                width={600}
+                height={400}
+                className="rounded-xl object-contain"
+              />
             </CardContent>
           </Card>
         </div>
