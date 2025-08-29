@@ -16,8 +16,8 @@ export default function ProgrammingLanguagesSection() {
     router.push("/") // Navega a /scrum
   }
 
-  const navigateToLanguajes = () => {
-    router.push("/lenguajes") // Navega a /lenguajes
+  const navigateToProyectCharter = () => {
+    router.push("/proyect-charter") // Navega a /proyect-charter
   }
 
   const navigateToCicloVsGestion = () => {
@@ -39,9 +39,9 @@ export default function ProgrammingLanguagesSection() {
           <Button onClick={navigateToScrum} variant="outline">
             Metodología Scrum
           </Button>
-          <Button onClick={navigateToLanguajes} variant="outline"
+          <Button onClick={navigateToProyectCharter} variant="outline"
            className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Lenguajes de Programación
+            Project Charter
           </Button>
           <Button
             onClick={navigateToCicloVsGestion}
@@ -60,10 +60,10 @@ export default function ProgrammingLanguagesSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              ¿Qué son los lenguajes de programación?
+              ¿Qué es el project charter?
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Los lenguajes de programación son herramientas fundamentales para el desarrollo de software.
+              Placeholder
             </p>
           </div>
         </div>
@@ -72,14 +72,11 @@ export default function ProgrammingLanguagesSection() {
           <Card>
             <CardHeader>
               <CardTitle>Definición</CardTitle>
-              <CardDescription>Comprendiendo los lenguajes de programación</CardDescription>
+              <CardDescription>Comprendiendo el project charter</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Los lenguajes de programación son conjuntos de reglas sintácticas y semánticas que permiten a los
-                desarrolladores crear instrucciones que las computadoras pueden entender y ejecutar. Funcionan como
-                intermediarios entre el pensamiento humano y el procesamiento de la máquina, permitiendo la creación de
-                software.
+                [Placeholder]
               </p>
             </CardContent>
           </Card>

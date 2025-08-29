@@ -1,7 +1,7 @@
 "use client"; // Marca este componente como un Client Component
 
 import { useRouter } from "next/navigation"; // Usa next/navigation en lugar de next/router
-import { Cpu, Layout, FileText, MapIcon as Diagram, CheckSquare } from "lucide-react";
+import { Cpu, FileText, MapIcon as Diagram } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -12,8 +12,8 @@ export default function SoftwareEngineeringConcepts() {
   const navigateToScrum = () => {
     router.push("/scrum"); // Navega a /scrum
   };
-  const navigateToLanguajes = () => {
-    router.push("/lenguajes"); // Navega a /lenguajes
+  const navigateToProyectCharter = () => {
+    router.push("/proyect-charter"); // Navega a /proyect-charter
   };
   const navigateToCicloVsGestion = () => {
     router.push("/ciclo-vs-gestion"); // Navega a /ciclo-vs-gestion
@@ -41,7 +41,7 @@ export default function SoftwareEngineeringConcepts() {
             Ir a Scrum
           </button>
           <button
-          onClick={navigateToLanguajes}
+          onClick={navigateToProyectCharter}
           className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
           >
           Ir a Lenguajes Programacion
@@ -75,12 +75,6 @@ export default function SoftwareEngineeringConcepts() {
             description="Un enfoque organizado para lograr objetivos específicos mediante la ejecución de proyectos."
             content="La gestión de proyectos es la práctica de liderar un equipo de trabajo para alcanzar metas claramente definidas en un período de tiempo determinado. Permite estructurar el esfuerzo en fases (inicio, planificación, ejecución, monitoreo y cierre), optimizando recursos y garantizando que los entregables cumplan con los estándares acordados. Es fundamental para el éxito de iniciativas en áreas como ingeniería, negocios, tecnología y más."
           />
-          <ConceptCard
-            icon={<Layout className="h-8 w-8 text-primary" />}
-            title="Modelo Canvas"
-            description="Una herramienta de gestión estratégica para desarrollar nuevos modelos de negocio o documentar los existentes."
-            content="El Modelo Canvas, también conocido como Business Model Canvas, es una plantilla de gestión estratégica para el desarrollo de nuevos modelos de negocio o la documentación de los ya existentes. Es un gráfico visual con elementos que describen la propuesta de valor de una empresa o producto, la infraestructura, los clientes y las finanzas. Ayuda a las empresas a alinear sus actividades ilustrando posibles compensaciones y facilitando la innovación en modelos de negocio."
-          />
 
           <ConceptCard
             icon={<FileText className="h-8 w-8 text-primary" />}
@@ -91,16 +85,9 @@ export default function SoftwareEngineeringConcepts() {
 
           <ConceptCard
             icon={<Diagram className="h-8 w-8 text-primary" />}
-            title="[PLACEHOLDER]"
+            title="Características"
             description=""
             content=""
-          />
-
-          <ConceptCard
-            icon={<CheckSquare className="h-8 w-8 text-primary" />}
-            title="Estudio de Factibilidad"
-            description="Un análisis que evalúa la viabilidad de un proyecto de software propuesto."
-            content="El estudio de factibilidad es una evaluación preliminar de la viabilidad de un proyecto de software propuesto. Su objetivo es determinar si el proyecto es técnicamente posible, económicamente justificable y operacionalmente viable. Este estudio típicamente examina tres áreas principales: factibilidad técnica (¿puede construirse?), factibilidad económica (¿los beneficios superan los costos?), y factibilidad operacional (¿funcionará en la organización?). Ayuda a los tomadores de decisiones a determinar si proceder con el proyecto, modificarlo o abandonarlo antes de invertir recursos significativos."
           />
         </div>
       </main>
