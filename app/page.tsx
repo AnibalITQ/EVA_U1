@@ -18,19 +18,19 @@ export default function SoftwareEngineeringConcepts() {
   const navigateToDB = () => {
     router.push("/db"); // Navega a /db
   };
-  // Función para navegar a la página Espiral
-  const navigateToEspiral = () => {
-    router.push("/espiral"); // Navega a /espiral
+  // Función para navegar a la página Canvas
+  const navigateToCanvas = () => {
+    router.push("/canvas");
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <header className="py-12 text-center">
         <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-          Conceptos Clave en Ingeniería de Software
+          Conceptos Clave en Gestion de Proyectos de software
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Explorando las bases fundamentales y metodologías esenciales en el desarrollo de software moderno.
+          Explorando las bases fundamentales y metodologías esenciales en la gestión de proyectos de software
         </p>
         {/* Botones de navegación */}
         <div className="mt-6 space-x-4">
@@ -53,23 +53,28 @@ export default function SoftwareEngineeringConcepts() {
             Ir a Base de Datos
             </button>
           <button
-            onClick={navigateToEspiral}
+            onClick={navigateToCanvas}
             className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
           >
-            Ir a Espiral
+            Ir a Canvas
           </button>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ConceptCard
             icon={<Cpu className="h-8 w-8 text-primary" />}
-            title="Ingeniería de Software"
-            description="La aplicación sistemática de enfoques disciplinados y cuantificables al desarrollo, operación y mantenimiento de software."
-            content="La ingeniería de software es una disciplina de ingeniería que se ocupa de todos los aspectos de la producción de software, desde las etapas iniciales de la especificación del sistema hasta el mantenimiento del sistema después de que se ha puesto en uso. Integra principios de matemáticas, ciencias de la computación y prácticas de ingeniería con el objetivo de desarrollar software de alta calidad de manera sistemática, controlada y eficiente."
+            title="Definición de Gestión de Proyectos"
+            description="Disciplina que aplica conocimientos, habilidades, herramientas y técnicas a las actividades de un proyecto para cumplir con sus requisitos."
+            content="La gestión de proyectos se define como la aplicación de metodologías, procesos y buenas prácticas para planificar, ejecutar y controlar proyectos de manera que se logren los objetivos planteados en tiempo, costo, alcance y calidad. Involucra coordinar recursos humanos, financieros y materiales, así como gestionar riesgos y comunicación entre los interesados."
           />
-
+          <ConceptCard
+            icon={<Cpu className="h-8 w-8 text-primary" />}
+            title="Qué es la Gestión de Proyectos"
+            description="Un enfoque organizado para lograr objetivos específicos mediante la ejecución de proyectos."
+            content="La gestión de proyectos es la práctica de liderar un equipo de trabajo para alcanzar metas claramente definidas en un período de tiempo determinado. Permite estructurar el esfuerzo en fases (inicio, planificación, ejecución, monitoreo y cierre), optimizando recursos y garantizando que los entregables cumplan con los estándares acordados. Es fundamental para el éxito de iniciativas en áreas como ingeniería, negocios, tecnología y más."
+          />
           <ConceptCard
             icon={<Layout className="h-8 w-8 text-primary" />}
             title="Modelo Canvas"
