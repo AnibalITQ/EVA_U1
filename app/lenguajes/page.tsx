@@ -16,12 +16,12 @@ export default function ProgrammingLanguagesSection() {
     router.push("/lenguajes") // Navega a /lenguajes
   }
 
-  const navigateToDB = () => {
-    router.push("/db") // Navega a /db
+  const navigateToCicloVsGestion = () => {
+    router.push("/ciclo-vs-gestion") // Navega a /ciclo-vs-gestion
   }
 
-  const navigateToEspiral = () => {
-    router.push("/espiral") // Navega a /espiral
+  const navigateToCanvas = () => {
+    router.push("/canvas") // Navega a /Canvas
   }
 
   return (
@@ -37,14 +37,14 @@ export default function ProgrammingLanguagesSection() {
             Lenguajes de Programación
           </Button>
           <Button
-            onClick={navigateToDB}
+            onClick={navigateToCicloVsGestion}
             variant="outline"
            
           >
-            Bases de Datos
+            Ciclo vs Gestión
           </Button>
-          <Button onClick={navigateToEspiral} variant="outline">
-            Modelo Espiral
+          <Button onClick={navigateToCanvas} variant="outline">
+            Modelo Canvas
           </Button>
         </div>
       

@@ -1,3 +1,6 @@
+"use client"
+
+import { useRouter } from "next/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
@@ -17,8 +20,26 @@ import {
 } from "lucide-react"
 
 export default function CanvasModelPage() {
+  const router = useRouter()
+    // Navegación
+  const navigateToScrum = () => router.push("/scrum")
+  const navigateToLanguajes = () => router.push("/lenguajes")
+  const navigateToCicloVsGestion = () => router.push("/ciclo-vs-gestion")
+  const navigateToCanvas = () => router.push("/canvas")
   return (
     <div className="container mx-auto px-4 py-8">
+              {/* Botones de navegación */}
+        <div className="flex flex-wrap gap-4 mb-8 justify-center">
+          <button onClick={navigateToScrum} className="px-4 py-2 border rounded">Metodología Scrum</button>
+          <button onClick={navigateToLanguajes} className="px-4 py-2 border rounded">Lenguajes de Programación</button>
+          <button
+            onClick={navigateToCicloVsGestion}
+            className="px-4 py-2 border rounded"
+          >
+            Ciclo vs Gestión
+          </button>
+          <button onClick={navigateToCanvas} className="px-4 py-2 border rounded bg-primary text-primary-foreground">Modelo Canvas</button>
+        </div>
       <header className="mb-10 text-center">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Modelo Canvas (Business Model Canvas)</h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

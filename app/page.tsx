@@ -15,8 +15,8 @@ export default function SoftwareEngineeringConcepts() {
   const navigateToLanguajes = () => {
     router.push("/lenguajes"); // Navega a /lenguajes
   };
-  const navigateToDB = () => {
-    router.push("/db"); // Navega a /db
+  const navigateToCicloVsGestion = () => {
+    router.push("/ciclo-vs-gestion"); // Navega a /ciclo-vs-gestion
   };
   // Función para navegar a la página Canvas
   const navigateToCanvas = () => {
@@ -47,10 +47,10 @@ export default function SoftwareEngineeringConcepts() {
           Ir a Lenguajes Programacion
           </button>
             <button
-            onClick={navigateToDB}
+            onClick={navigateToCicloVsGestion}
             className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
             >
-            Ir a Base de Datos
+            Ir a Ciclo vs Gestion
             </button>
           <button
             onClick={navigateToCanvas}
@@ -84,16 +84,16 @@ export default function SoftwareEngineeringConcepts() {
 
           <ConceptCard
             icon={<FileText className="h-8 w-8 text-primary" />}
-            title="Norma IEEE 830"
-            description="Un estándar que especifica la estructura recomendada para la Especificación de Requisitos de Software (ERS)."
-            content="La Norma IEEE 830 es un estándar que proporciona directrices para la especificación de los requisitos de software. Su propósito es ayudar a los desarrolladores de software a establecer la base para los acuerdos entre clientes y proveedores sobre lo que el producto de software debe hacer. Establece el formato y contenido de las especificaciones de requisitos de software (ERS), incluyendo características funcionales, interfaces externas, rendimiento, atributos y restricciones de diseño del software."
+            title="¿Qué es el PMI"
+            description=""
+            content=""
           />
 
           <ConceptCard
             icon={<Diagram className="h-8 w-8 text-primary" />}
-            title="UML (Unified Modeling Language)"
-            description="Un lenguaje de modelado visual utilizado para especificar, visualizar, construir y documentar artefactos de sistemas de software."
-            content="UML (Unified Modeling Language) es un lenguaje de modelado visual de propósito general utilizado en ingeniería de software. Proporciona una manera estándar de visualizar el diseño de un sistema, incluyendo aspectos conceptuales como procesos de negocio y funciones del sistema, y aspectos concretos como expresiones de lenguajes de programación, esquemas de bases de datos y componentes de software reutilizables. UML incluye diversos tipos de diagramas que ayudan a los desarrolladores a especificar, visualizar y documentar modelos de sistemas de software, además de utilizarse para modelar procesos de negocio y sistemas no software."
+            title="[PLACEHOLDER]"
+            description=""
+            content=""
           />
 
           <ConceptCard
