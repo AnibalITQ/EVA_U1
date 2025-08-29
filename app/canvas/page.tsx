@@ -23,6 +23,7 @@ export default function CanvasModelPage() {
   const router = useRouter()
     // Navegación
   const navigateToScrum = () => router.push("/scrum")
+  const navigateToHome = () => router.push("/")
   const navigateToLanguajes = () => router.push("/lenguajes")
   const navigateToCicloVsGestion = () => router.push("/ciclo-vs-gestion")
   const navigateToCanvas = () => router.push("/canvas")
@@ -30,6 +31,7 @@ export default function CanvasModelPage() {
     <div className="container mx-auto px-4 py-8">
               {/* Botones de navegación */}
         <div className="flex flex-wrap gap-4 mb-8 justify-center">
+          <button onClick={navigateToHome} className="px-4 py-2 border rounded">Regresar a la pagina principal</button>
           <button onClick={navigateToScrum} className="px-4 py-2 border rounded">Metodología Scrum</button>
           <button onClick={navigateToLanguajes} className="px-4 py-2 border rounded">Lenguajes de Programación</button>
           <button

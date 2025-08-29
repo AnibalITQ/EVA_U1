@@ -12,6 +12,10 @@ export default function ProgrammingLanguagesSection() {
     router.push("/scrum") // Navega a /scrum
   }
 
+    const navigateToHome = () => {
+    router.push("/") // Navega a /scrum
+  }
+
   const navigateToLanguajes = () => {
     router.push("/lenguajes") // Navega a /lenguajes
   }
@@ -29,6 +33,9 @@ export default function ProgrammingLanguagesSection() {
       <div className="container px-4 md:px-6">
         {/* Navigation Buttons */}
         <div className="flex flex-wrap gap-4 mb-8 justify-center">
+          <Button onClick={navigateToHome} variant="outline">
+            Regresar a la Pagina Principal
+          </Button>
           <Button onClick={navigateToScrum} variant="outline">
             Metodología Scrum
           </Button>
