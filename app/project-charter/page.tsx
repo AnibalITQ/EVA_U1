@@ -11,7 +11,7 @@ export default function ProgrammingLanguagesSection() {
   }
 
   const navigateToProyectCharter = () => {
-    router.push("/proyect-charter") // Navega a /proyect-charter
+    router.push("/project-charter") // Navega a /proyect-charter
   }
 
   const navigateToCicloVsGestion = () => {

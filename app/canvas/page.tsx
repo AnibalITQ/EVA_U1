@@ -23,7 +23,7 @@ export default function CanvasModelPage() {
   const router = useRouter()
     // Navegación
   const navigateToHome = () => router.push("/")
-  const navigateToProyectCharter = () => router.push("/proyect-charter")
+  const navigateToProyectCharter = () => router.push("/project-charter")
   const navigateToCicloVsGestion = () => router.push("/ciclo-vs-gestion")
   const navigateToCanvas = () => router.push("/canvas")
   return (
