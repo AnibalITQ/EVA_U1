@@ -78,16 +78,21 @@ export default function SoftwareEngineeringConcepts() {
 
           <ConceptCard
             icon={<FileText className="h-8 w-8 text-primary" />}
-            title="¿Qué es el PMI"
-            description=""
-            content=""
+            title="¿Qué es el PMI?"
+            description="El PMI (Project Management Institute) es una organización global sin fines de lucro que establece estándares y mejores prácticas en la gestión de proyectos."
+            content="PMI es conocido por su enfoque en la gestión de proyectos a través de su guía estándar, el PMBOK (Project Management Body of Knowledge), que proporciona un marco estructurado para la planificación, ejecución y cierre de proyectos. A través de certificaciones como PMP (Project Management Professional), PMI promueve una metodología que ayuda a los profesionales a mejorar sus competencias en gestión de proyectos."
           />
 
           <ConceptCard
             icon={<Diagram className="h-8 w-8 text-primary" />}
             title="Características"
-            description=""
-            content=""
+            description="El PMI establece un conjunto de principios, normas y mejores prácticas para gestionar proyectos de manera eficiente."
+            content="Las características clave del PMI incluyen:
+            - **Estándares globales**: Proporciona un enfoque uniforme para la gestión de proyectos en diferentes industrias.
+            - **Ciclo de vida del proyecto**: Define las fases de un proyecto desde su inicio hasta su cierre.
+            - **Áreas de conocimiento**: El PMI organiza la gestión de proyectos en áreas como alcance, tiempo, costo, calidad, recursos, comunicaciones, riesgos, adquisiciones e interesados.
+            - **Enfoque en resultados**: Su objetivo es garantizar que los proyectos se entreguen a tiempo, dentro del presupuesto y según los requisitos establecidos.
+            - **Certificación PMP**: Reconocida mundialmente, esta certificación valida la experiencia y conocimientos de los profesionales en la gestión de proyectos."
           />
         </div>
       </main>
