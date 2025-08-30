@@ -1,19 +1,15 @@
 "use client"; // Marca este componente como un Client Component
 
 import { useRouter } from "next/navigation"; // Usa next/navigation en lugar de next/router
-import { Cpu, FileText, MapIcon as Diagram } from "lucide-react";
+import { Cpu, FileText, Workflow } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function SoftwareEngineeringConcepts() {
   const router = useRouter(); // Obtén el objeto router de next/navigation
 
-  // Función para navegar a la página Scrum
-  const navigateToScrum = () => {
-    router.push("/scrum"); // Navega a /scrum
-  };
   const navigateToProyectCharter = () => {
-    router.push("/proyect-charter"); // Navega a /proyect-charter
+    router.push("/project-charter"); // Navega a /proyect-charter
   };
   const navigateToCicloVsGestion = () => {
     router.push("/ciclo-vs-gestion"); // Navega a /ciclo-vs-gestion
@@ -35,16 +31,10 @@ export default function SoftwareEngineeringConcepts() {
         {/* Botones de navegación */}
         <div className="mt-6 space-x-4">
           <button
-            onClick={navigateToScrum}
-            className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-          >
-            Ir a Scrum
-          </button>
-          <button
           onClick={navigateToProyectCharter}
           className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
           >
-          Ir a Lenguajes Programacion
+          Ir a Project Charter
           </button>
             <button
             onClick={navigateToCicloVsGestion}
@@ -94,12 +84,13 @@ export default function SoftwareEngineeringConcepts() {
             - **Enfoque en resultados**: Su objetivo es garantizar que los proyectos se entreguen a tiempo, dentro del presupuesto y según los requisitos establecidos.
             - **Certificación PMP**: Reconocida mundialmente, esta certificación valida la experiencia y conocimientos de los profesionales en la gestión de proyectos."
           />
+
         </div>
       </main>
 
       <footer className="bg-gray-800 text-white py-8 mt-12">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2025 Anibal Emilio Tirado Delgado && Javier Bacilio Sánchez | Ingeniería de software.</p>
+          <p>&copy; 2025 Anibal Emilio Tirado Delgado, Javier Bacilio Sánchez Y Adolfo Cortes Corona | Gestión de proyectos de software.</p>
           <p className="mt-2">Diseñado con pasión por la ingeniería de software.</p>
         </div>
       </footer>
