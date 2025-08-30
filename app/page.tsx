@@ -74,7 +74,7 @@ export default function SoftwareEngineeringConcepts() {
           />
 
           <ConceptCard
-            icon={<Diagram className="h-8 w-8 text-primary" />}
+            icon={<Workflow className="h-8 w-8 text-primary" />}
             title="Características"
             description="El PMI establece un conjunto de principios, normas y mejores prácticas para gestionar proyectos de manera eficiente."
             content="Las características clave del PMI incluyen:
