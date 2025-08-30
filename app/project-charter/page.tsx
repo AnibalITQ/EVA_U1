@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
+import charterImg from "@/public/images/project-charter-ejemplo.png" // requiere alias "@"
 export default function ProgrammingLanguagesSection() {
   const router = useRouter() // Obtén el objeto router de next/navigation
     const navigateToHome = () => {
@@ -88,7 +89,7 @@ export default function ProgrammingLanguagesSection() {
             </CardHeader>
             <CardContent>
               <Image
-                src="/images/project-charter-ejemplo.png"
+                src={charterImg}
                 alt="Ejemplo de Project Charter"
                 width={600}
                 height={400}
